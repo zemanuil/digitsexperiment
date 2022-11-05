@@ -1,0 +1,26 @@
+public class Main{
+
+        public static void main(String[] args){
+        
+            Container container = new Container();
+        container.count += 7843;
+        
+        System.out.println(Main.sumDigits("5059191"));
+
+        }
+
+        public static int sumDigits(String number){
+
+        int s = Integer.parseInt(number);
+        int sum = 0;
+        for (int i = 0; i < number.length(); i++ ) {
+            sum = sum + Integer.parseInt(String.valueOf(number.charAt(i)));//чарэт принимает число индекса, тип int, возвращает код символа, типа char. вальюоф - принимает много что, тут код символа, возвращает символ в виде строки
+        }
+        return sum ;
+        }
+}
+
+class Container
+    {
+        public int count;
+    }
